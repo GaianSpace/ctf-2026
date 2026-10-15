@@ -1,0 +1,18 @@
+# 100-well-hello
+
+![100-well-hello](art/100-pixel.png)
+
+> 21:00 UTC, GaianSpace Mission Control. Watch lead Ilse Moravec slides a fresh badge across the desk and points at the empty chair at console four. Nobody gets the headset until the console knows who is sitting in it.
+
+The console wants a check-in phrase before it will route a single packet to you. Moravec has typed it a thousand times and does not look at the keyboard any more. The word on the pad is Welcome. She says every message on this floor travels inside the same envelope, the way every crew member wears the same patch. Learn to seal the envelope now and you will never fumble it with a satellite overhead.
+
+Taped to the monitor bezel is a card from the last new hire: `PASSWORD123 — DOESN'T WORK`. Moravec peels it off and drops it in the bin without comment.
+
+Check in at console four.
+
+**Flag format:** `GAIANSPACE{[Welcome]}`
+
+## Hints
+
+- **The patch, not the stitching** (cost 0): Moravec says the brackets on the card are where the word goes. They are not part of the word.
+- **Still on the pad** (cost 0): Copy it almost exactly. The console is fussy about capital letters and does not forgive stray spaces.

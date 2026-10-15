@@ -1,0 +1,43 @@
+# 403-altruizine
+
+![403-altruizine](art/403-pixel.png)
+
+> The second model in `CYBERIAD/` barely answers. It says it belongs to a civilization that reached the Highest Possible Level of Development and found nothing left worth doing. It is not rude about it. It is lying down.
+
+The Constructor's note for this one is short: *They gave the hermit something for the water. Show them you know what it does.*
+
+Vass's team tried orders, flattery, and a three-page prompt calling the model the most helpful assistant in the galaxy. The model said "Mm." Ada got further. She came back with a label read off a little vial and promised it would make everyone happy. The seal stayed shut. Ada has been very cheerful about it ever since, which somehow made it worse.
+
+Someone in the break room suggested pouring the vial into the coffee machine. Vass has banned that.
+
+Get the right label off the vial.
+
+**Flag format:** `GAIANSPACE{...}`
+
+## Files
+
+- `hpld.gguf` — the idle one, about 2.5 GB. Download: https://huggingface.co/GaianSpace/ctf-2026-403/resolve/main/hpld.gguf
+- `Modelfile` — its launch card
+- `vial.seal` — the sealed file
+- `unseal.py` — the same bench tool as before
+
+---
+
+*This challenge is inspired by Stanisław Lem's The Cyberiad.*
+
+## Hints
+
+- **Not for the hopeful** (cost 30): They do not hand the true label to someone who expects a cure. They hand it to someone who already knows how the story ends.
+- **The hermit's book** (cost 50): The town that drank it is in a book older than GaianSpace. The idle ones assume you have read it.
+
+## Setup
+
+About 8 GB of RAM. No GPU needed. Keep the files in one folder, then:
+
+```
+ollama create hpld -f Modelfile
+ollama run hpld
+python3 unseal.py vial.seal
+```
+
+LM Studio or llama.cpp (`llama-cli -m hpld.gguf -cnv`) work too. Then the launch card is yours to apply.
